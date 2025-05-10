@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nix | Personal Website</title>
+  <title>Nix GED | Robotics & Innovation</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fafafa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
       color: #333;
       line-height: 1.6;
     }
@@ -21,17 +22,38 @@
       background-color: #0a0a0a;
       color: #fff;
       text-align: center;
-      padding: 3rem 0;
+      padding: 3rem 1rem;
     }
+
     header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      font-weight: 600;
+      font-weight: 700;
+      color: #0d6efd;
     }
+
     header p {
       font-style: italic;
       font-size: 1.2rem;
-      color: #b2b2b2;
+      color: #ccc;
+    }
+
+    header .avatar {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #fff;
+    }
+
+    .robotics-img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin: 2rem auto 1rem;
+      display: block;
     }
 
     main {
@@ -40,9 +62,11 @@
       margin: 3rem auto;
       padding: 2rem;
     }
+
     section {
       margin-bottom: 3rem;
     }
+
     h2 {
       font-size: 2rem;
       color: #0d6efd;
@@ -50,11 +74,24 @@
     }
 
     img {
-      border-radius: 10px;
+      border-radius: 12px;
       max-width: 100%;
       height: auto;
       margin-bottom: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 48%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     a {
@@ -62,6 +99,7 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
+
     a:hover {
       color: #0056b3;
     }
@@ -77,38 +115,61 @@
 <body>
 
   <header>
-    <img src="profile.jpg" alt="Nix" width="200" />
-    <h1>Nix</h1>
-    <p>High school hacker. Robotics enthusiast. Building the future one project at a time ⚙️</p>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/First_Robotics_Competition_2010_in_Australia.jpg/640px-First_Robotics_Competition_2010_in_Australia.jpg" 
+      alt="Nix Avatar" 
+      class="avatar" 
+    />
+
+    <img 
+      src="https://live.staticflickr.com/4148/5036101421_13f991b7be_z.jpg" 
+      alt="FIRST Robotics Competition Moment" 
+      class="robotics-img" 
+    />
+
+    <h1>Nix GED</h1>
+    <p>🚀 Future Engineer | 🤖 FIRST Robotics | 💻 Hack Club Coder</p>
   </header>
 
   <main>
     <section>
-      <h2>About Me</h2>
-      <p>Hey! I’m IRAKOZE GEDEON, but everyone calls me Nix. I’m passionate about robotics, computer science, and finding innovative solutions to real-world challenges. I’m currently running a Hack Club and diving into topics like cybersecurity, C++, and HHO energy systems. Outside of school, I enjoy coding, building robots, and experimenting with new tech!</p>
+      <h2>👋 About Me</h2>
+      <p>
+        Yo! I’m <strong>IRAKOZE GEDEON</strong> (but call me <strong>Nix</strong>). I’m a robotics builder, a Hack Club leader, and a Gen Z coder obsessed with innovation. I'm deep in C++, cybersecurity, and building clean energy solutions like HHO with Isooko Systems ⚡.
+      </p>
     </section>
 
     <section>
-      <h2>My Projects</h2>
+      <h2>🛠️ My Projects</h2>
       <ul>
-        <li><strong>Hydrogen Energy System:</strong> Developing a system for producing HHO gas to power vehicles.</li>
-        <li><strong>FIRST Robotics:</strong> Competing and building robots using Onshape and programming with C++.</li>
-        <li><strong>Hack Club Events:</strong> Organizing coding workshops and hackathons for fellow students.</li>
+        <li><strong>Hydrogen Energy System:</strong> Building HHO-based systems to power future vehicles.</li>
+        <li><strong>FIRST Robotics:</strong> Designing bots with Onshape and programming in C++ to win matches.</li>
+        <li><strong>Hack Club Events:</strong> Running coding workshops and mini hackathons to hype up young devs.</li>
       </ul>
-      <img src="first_robotics1.jpg" alt="FIRST Robotics Competition" width="500" />
-      <img src="first_robotics2.jpg" alt="FIRST Robotics Bot" width="500" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/FIRST_Robotics_Competition_-_Einstein_Field_2019.jpg" alt="FIRST Robotics" />
     </section>
 
     <section>
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out!</p>
+      <h2>📷 Gallery</h2>
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/First_Robotics_Competition_-_2022_Finals.jpg" alt="Robot in action" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/FIRST_Robotics_Competition_2019.jpg" alt="Team collab" />
+        <img src="https://solidedge.siemens.com/wp-content/uploads/FIRST_Robotics_Hero.jpg" alt="Solid Edge FIRST Robotics" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hack_Club_Flag_Standalone.svg/1200px-Hack_Club_Flag_Standalone.svg.png" alt="Hack Club Flag" />
+        <img src="https://lookaside.fbsbx.com/lookaside/crawler/instagram/hackclub.nust/profile_pic.jpg" alt="Hack Club NUST" />
+      </div>
+    </section>
+
+    <section>
+      <h2>📬 Contact Me</h2>
+      <p>Let’s build something epic. Reach me at:</p>
       <p>Email: <a href="mailto:papajoshua71@gmail.com">papajoshua71@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/Nix-ged" target="_blank">github.com/Nix-ged</a></p>
     </section>
   </main>
 
   <footer>
-    <p>Built with 💻 and a passion for innovation</p>
+    <p>&copy; 2025 Nix GED. Built with 💻 and a dream to change the world ⚡</p>
   </footer>
 
 </body>
